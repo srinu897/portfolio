@@ -50,7 +50,7 @@ export const projects = [
       "CSS3",
       "JavaScript"
     ],
-    liveDemo: "http://localhost:5173/",
+    liveDemo: "https://portfolio-gilt-gamma-jdev8d36la.vercel.app/",
     github:
       "https://github.com/srinu897/portfolio.git",
     featured: true
