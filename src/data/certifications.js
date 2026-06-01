@@ -1,9 +1,10 @@
 import ibmSQL from "../assets/certificates/ibm-sql.png";
 import hackerRankJava from "../assets/certificates/hackerrank-java.png";
-import infosysPython from "../assets/certificates/infosys-python.png";
+import greatLearningPython from "../assets/certificates/greatlearning-python.png";
 import ciscoDataAnalytics from "../assets/certificates/cisco-data-analytics.png";
 import webdevelopment from "../assets/certificates/web-development.png";
 import buildingDataAnalyticsCloud from "../assets/certificates/building-data-analytics-cloud.png";
+
 export const certifications = [
   {
     id: 1,
@@ -21,9 +22,9 @@ export const certifications = [
 
   {
     id: 3,
-    title: "Python",
-    issuer: "Infosys Springboard",
-    image: infosysPython
+    title: "Python for Beginners",
+    issuer: "Great Learning Academy",
+    image: greatLearningPython
   },
 
   {
@@ -39,10 +40,11 @@ export const certifications = [
     issuer: "Edunet Foundation",
     image: webdevelopment
   },
+
   {
-  id: 6,
-  title: "Building Data Analytics Application with Cloud",
-  issuer: "Edunet Foundation | EY | AICTE | TASK",
-  image: buildingDataAnalyticsCloud
+    id: 6,
+    title: "Building Data Analytics Application with Cloud",
+    issuer: "Edunet Foundation | EY | AICTE | TASK",
+    image: buildingDataAnalyticsCloud
   }
 ];
