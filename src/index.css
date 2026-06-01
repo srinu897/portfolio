@@ -1,0 +1,264 @@
+@import "tailwindcss";
+
+/* =========================
+GLOBAL SETTINGS
+========================= */
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+padding: 0;
+color: #ffffff;
+overflow-x: hidden;
+
+background:
+radial-gradient(
+circle at top left,
+rgba(56, 189, 248, 0.12),
+transparent 35%
+),
+radial-gradient(
+circle at bottom right,
+rgba(99, 102, 241, 0.12),
+transparent 35%
+),
+#020617;
+
+font-family: Inter, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+a {
+text-decoration: none;
+}
+
+/* =========================
+SECTION SPACING
+========================= */
+
+section {
+padding-top: 100px;
+padding-bottom: 100px;
+}
+
+/* =========================
+CONTAINER
+========================= */
+
+.container-custom {
+max-width: 1280px;
+margin: auto;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+/* =========================
+GLASS CARD
+========================= */
+
+.glass-card {
+background: rgba(15, 23, 42, 0.8);
+
+backdrop-filter: blur(20px);
+
+border: 1px solid rgba(
+56,
+189,
+248,
+0.08
+);
+
+border-radius: 24px;
+
+transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+transform: translateY(-6px);
+
+border-color: rgba(
+56,
+189,
+248,
+0.3
+);
+}
+
+/* =========================
+TITLES
+========================= */
+
+.section-title {
+font-size: 2.8rem;
+font-weight: 700;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.section-subtitle {
+color: #94a3b8;
+
+text-align: center;
+
+max-width: 700px;
+
+margin: auto;
+
+margin-bottom: 60px;
+
+line-height: 1.8;
+}
+
+/* =========================
+GRADIENT TEXT
+========================= */
+
+.gradient-text {
+background: linear-gradient(
+135deg,
+#38bdf8,
+#6366f1
+);
+
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+.btn-primary {
+background: linear-gradient(
+135deg,
+#38bdf8,
+#6366f1
+);
+
+color: white;
+
+padding: 14px 32px;
+
+border-radius: 14px;
+
+font-weight: 600;
+
+transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+transform: translateY(-3px);
+}
+
+.btn-outline {
+border: 1px solid #38bdf8;
+
+color: #38bdf8;
+
+padding: 14px 32px;
+
+border-radius: 14px;
+
+font-weight: 600;
+
+transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+background: #38bdf8;
+
+color: #020617;
+}
+
+/* =========================
+IMAGE EFFECTS
+========================= */
+
+.profile-image {
+box-shadow:
+0 0 20px rgba(56,189,248,0.3),
+0 0 60px rgba(56,189,248,0.2);
+}
+
+/* =========================
+CARD HOVER
+========================= */
+
+.project-card:hover {
+transform: translateY(-8px);
+}
+
+/* =========================
+SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #38bdf8;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #020617;
+}
+
+/* =========================
+ANIMATIONS
+========================= */
+
+.fade-in {
+animation: fadeIn 1s ease-in;
+}
+
+.slide-up {
+animation: slideUp 0.8s ease;
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+@keyframes slideUp {
+from {
+transform: translateY(50px);
+opacity: 0;
+}
+
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+.section-title {
+font-size: 2rem;
+}
+
+.container-custom {
+padding-left: 18px;
+padding-right: 18px;
+}
+
+}
